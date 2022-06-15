@@ -46,6 +46,7 @@ p {
 }
 
 .fill-button {
+  display: block;
   width: 140px;
   height: 48px;
   padding: 12px 32px;
@@ -61,6 +62,34 @@ p {
 
 .fill-button:hover {
   opacity: 0.5;
+}
+
+.common-section {
+  padding: 80px 0;
+}
+
+.common-category {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.common-title {
+  margin-bottom: 24px;
+  color: #2b292d;
+  font-size: 34px;
+  line-height: 1.05882353;
+  letter-spacing: -0.03em;
+}
+
+.common-desc {
+  margin-bottom: 32px;
+  color: #2b292d;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
 }
 
 /* Landing */
@@ -121,10 +150,193 @@ p {
   letter-spacing: -0.04em;
 }
 
+/* Program */
+.program .row:first-child {
+  margin-bottom: 32px;
+}
+
+.program .col-md-4 {
+  margin-bottom: 20px;
+}
+
+.program .col-md-4:last-child {
+  margin-bottom: 0;
+}
+
+.program .common-category {
+  color: #009b4d;
+}
+
+.program-card {
+  display: block;
+  padding: 24px 0 32px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+
+.program-card:hover {
+  background-color: #3141c5;
+  box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
+    0px 11px 55px rgba(0, 0, 0, 0.07);
+}
+
+.program-card:hover strong {
+  color: #fff;
+}
+
+.program-card img {
+  display: block;
+  width: auto;
+  height: 195px;
+  margin: 0 auto 16px;
+}
+
+.program-card strong {
+  color: #2b292d;
+  font-size: 18px;
+  line-height: 1.33333333;
+  letter-spacing: -0.02em;
+  transition: color 200ms ease-in-out;
+}
+
+/* Curriculum */
+.curriculum .common-category {
+  color: #0189d1;
+}
+
+.curriculum .row:first-child {
+  margin-bottom: 48px;
+}
+
+.curriculum .row:last-child {
+  margin-bottom: 48px;
+}
+
+.curriculum-img {
+  display: none;
+}
+
+.curriculum-detail {
+  font-size: 15px;
+  line-height: 1.466666666666667;
+  letter-spacing: -0.01em;
+}
+
+/* Subscription */
+.subscription {
+  padding: 65px 0 40px;
+  background-color: #f2f8fa;
+  text-align: center;
+}
+
+.subscription .col-12:first-child {
+  margin-bottom: 41px;
+}
+
+.subscription .col-md-5 img {
+  display: block;
+  width: auto;
+  height: 190px;
+  margin: 0 auto;
+}
+
+.subscription-title {
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.subscription-desc {
+  margin-bottom: 24px;
+}
+
+.subscription-email-group {
+  margin-bottom: 8px;
+}
+
+.subscription-email-input {
+  width: 100%;
+  height: 48px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  color: #7b7b7e;
+  background-color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.subscription-button {
+  width: 100%;
+}
+
+.subscription-term {
+  color: #7b7b7e;
+  font-size: 13px;
+  line-height: 1.538461538461539;
+}
+
+.subscription-term a {
+  color: #3040c4;
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  padding: 24px 0 30px;
+}
+
+.footer .col-md-1 {
+  margin-bottom: 8px;
+}
+
+.footer .col-md-1:last-child {
+  margin-bottom: 0;
+}
+
+.footer-nav {
+  color: #807f81;
+  font-size: 14px;
+  line-height: 1.71428571;
+  letter-spacing: -0.01em;
+}
+
 /* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
   /* Reset css */
   p {
+    font-size: 22px;
+    line-height: 1.45454545;
+  }
+
+  /* Common style */
+  .common-section {
+    padding-bottom: 96px;
+  }
+
+  .common-category {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 22px;
+    line-height: 1.09090909;
+  }
+
+  .common-title {
+    margin-bottom: 32px;
+    font-size: 56px;
+    line-height: 1;
+  }
+
+  .common-desc {
+    margin-bottom: 72px;
+    color: #2b292d;
     font-size: 22px;
     line-height: 1.45454545;
   }
@@ -163,6 +375,115 @@ p {
   }
 
   .service .col-12:first-child {
+    margin-bottom: 0;
+  }
+
+  /* Program */
+  .program {
+    text-align: center;
+  }
+
+  .program .row:first-child {
+    margin-bottom: 72px;
+  }
+
+  .program-card {
+    height: 299px;
+  }
+
+  .program-card:hover {
+    background-color: #3141c5;
+  }
+
+  .program-card img {
+    margin-bottom: 24px;
+  }
+
+  .program-card strong {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  /* Curriculum */
+  .curriculum .row:first-child {
+    margin-bottom: 66px;
+  }
+
+  .curriculum .row:last-child {
+    margin-bottom: 0;
+  }
+
+  .curriculum .common-desc {
+    margin-bottom: 72px;
+  }
+  .curriculum-detail {
+    font-size: 18px;
+    line-height: 1.44444444;
+  }
+
+  .curriculum-img {
+    display: block;
+  }
+
+  .curriculum-img img {
+    width: 100%;
+    max-width: 425px;
+  }
+
+  /* Subscription */
+
+  .subscription {
+    padding: 88px 0 87px;
+    text-align: left;
+  }
+
+  .subscription .col-12:first-child {
+    margin-bottom: 0;
+  }
+
+  .subscription .col-md-5 img {
+    height: 285px;
+    margin: 0;
+    margin-right: 113px;
+    padding: 8px 0;
+  }
+
+  .subscription-title {
+    font-size: 40px;
+  }
+
+  .subscription-email-group {
+    display: flex;
+    margin-bottom: 4px;
+  }
+
+  .subscription-email-input {
+    height: 56px;
+    padding: 16px;
+    margin: 0;
+    margin-right: 8px;
+    font-size: 18px;
+    line-height: 1.33333333;
+    letter-spacing: -0.01em;
+  }
+
+  .subscription-button {
+    flex-shrink: 0;
+    width: 160px;
+    height: 56px;
+  }
+
+  .subscription-term {
+    font-size: 14px;
+    line-height: 1.71428571;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 16px 0;
+  }
+
+  .footer .col-md-1 {
     margin-bottom: 0;
   }
 }
