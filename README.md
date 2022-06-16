@@ -6,7 +6,6 @@ Only HTML & CSS (Bootstrap, google-fonts)
 
 
 ***
-***
 
 
 ## Feedback
