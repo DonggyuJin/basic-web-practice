@@ -15,4 +15,4 @@ Only HTML & CSS (Bootstrap, google-fonts)
 ## Practice Result
 ![basic-web-practice](https://user-images.githubusercontent.com/97138841/174011115-f198772b-ebae-40af-8b2f-b19f2bf1a81f.gif)
 
-###### Project Source - ⓒKimbug
+###### Project Source - ⓒ Kimbug
